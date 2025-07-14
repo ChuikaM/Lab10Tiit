@@ -39,31 +39,16 @@
 ## 5. Изображения
 
 ![Логотип GitHub](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
-![Пример изображения](hl2_logo.png)
 
 ## 6. Пример кода
 
 ### Пример исходного кода C++ SFML
 ```cpp
-#include <SFML/Graphics.hpp>
+#include <iostream>
+using namespace std;
 
-int main()
+int main() 
 {
-    sf::RenderWindow window(sf::VideoMode({200, 200}), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
-
-    while (window.isOpen())
-    {
-        while (const std::optional event = window.pollEvent())
-        {
-            if (event->is<sf::Event::Closed>())
-                window.close();
-        }
-
-        window.clear();
-        window.draw(shape);
-        window.display();
-    }
+    cout << "Hello, world!\n";
 }
 ```
